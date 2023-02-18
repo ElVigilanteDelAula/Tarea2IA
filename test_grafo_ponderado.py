@@ -1,9 +1,9 @@
-import timeit
+import timeit #se importo una libreria para obtener el tiempo de procesado
 
 import grafo_ponderado as GRP
 import instance_generator as ig
 
-start = timeit.default_timer()
+start = timeit.default_timer() #inicia el conteo del tiempo
 
 # Grafo ejemplo con listas de adyacencia y pesos asociados
 #grafo = {'A': [('B', 1), ('C', 2), ('D', 3)],
@@ -34,6 +34,6 @@ def testGrafo():
 if __name__ == '__main__':
     testGrafo()
 
-    stop = timeit.default_timer()
+    stop = timeit.default_timer() #detiene la cuenta del tiempo
 
     print('Time: ', stop - start)
